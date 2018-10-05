@@ -266,6 +266,8 @@ structConsruct.cpp			Data-structure construction functions - implementation
 	|
 	+-> const double jaccardScore(const cv::Rect roi1, const cv::Rect roi2);
 	+-> cv::Mat paddedROI(const cv::Mat& input, const cv::Rect& rect);
+	+-> void getDPMDetectionsFromDatabase(std::string datasetPath, std::map<int, cv::Ptr<cv::dpm::DPMDetector>>& dpmDetectors,
+			std::map<int, std::map<std::string, std::vector<cv::dpm::DPMDetector::ObjectDetection>>>& dpm_detections)
 	+-> void getFeatureMapfromDPMDetections(const std::map<std::string, std::vector<cv::dpm::DPMDetector::ObjectDetection>>& cl_i_dpmDetections,
 	|		const std::map<std::string, std::vector<cv::Rect>>& class_i_gt, Task_1& task_1, 
 	|		FeatureMap& task_2,	int class_id, double jaccardThresh = 0.5);
