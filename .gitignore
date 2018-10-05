@@ -1,0 +1,9 @@
+spatial_envelope_256x256_static_8outdoorcategories/*
+spatial_envelope_256x256_static_8outdoorcategories_annotations/*
+x64/*
+*.json
+*.vcxproj.*
+*.vcxproj
+*.props
+
+
